@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bina Motor</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo-container">
+                <img src="assets/img/logo.png" alt="Logo Perusahaan" class="company-logo"> <!-- Tambahkan elemen img untuk logo -->
+                <h1 class="company-name">Bina Motor</h1>
+            </div>           
+            <nav>
+                <ul>
+                    <li><a href="#info">Tentang</a></li>
+                    <li><a href="#pelayanan">Pelayanan</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<!-- Slider banner -->
+    <section id="slider">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="assets/img/banner1.png" alt="Poster 1">
+            </div>
+            <div class="slide">
+                <img src="assets/img/banner2.png" alt="Poster 2">
+            </div>
+            <div class="slide">
+                <img src="assets/img/banner3.png" alt="Poster 3">
+            </div>
+        </div>
+
+        <!-- Tombol Panah Navigasi -->
+        <button class="arrow arrow-left">&#10094;</button>
+        <button class="arrow arrow-right">&#10095;</button>
+    </section>
+
+    <section id="info">
+        <div class="info-container">
+            <!-- Gambar di dalam kotak -->
+            <div class="info-image">
+                <img src="assets/img/company.jpg" alt="Gambar Perusahaan">
+            </div>
+    
+            <!-- Teks Informasi Perusahaan -->
+            <div class="info-content">
+                <h2>Tentang Kami</h2>
+                <p>Di Bina Motor, kami bangga menjadi penyedia layanan otomotif. Bengkel kami dikenal akan keunggulan dalam setiap aspek layanan kami. Dengan tim teknisi profesional yang berdedikasi, kami tidak hanya memberikan pelayanan yang memuaskan, tetapi juga berkomitmen penuh untuk memenuhi setiap kebutuhan pelanggan.</p>
+                <p>Kami selalu memperbarui teknologi dan pengetahuan kami agar bisa memberikan solusi terbaik bagi kendaraan Anda. Dari perawatan rutin hingga perbaikan kompleks, kami melakukan semuanya dengan standar tinggi. Di Bina Motor, kepuasan pelanggan adalah prioritas utama kami, dan kami selalu siap memberikan yang terbaik bagi Anda.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="services" class="services-section">
+        <h2 class="section-title">Layanan Kami</h2>
+        <div class="services-container">
+            <button class="nav-arrow-service left-arrow" onclick="moveLeft()">‹</button>
+            <div class="service-wrapper">
+                <!-- Box layanan; tiap box berisi foto dan nama layanan -->
+                <div class="service-box">
+                    <img src="foto1.jpg" alt="Layanan 1">
+                    <p class="service-name">Ganti Oli</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto2.jpg" alt="Layanan 2">
+                    <p class="service-name">Engine tune up</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto3.jpg" alt="Layanan 3">
+                    <p class="service-name">Purging Diesel</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto4.jpg" alt="Layanan 4">
+                    <p class="service-name">Gurah mesin</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto5.jpg" alt="Layanan 5">
+                    <p class="service-name">Engine Flush</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto6.jpg" alt="Layanan 6">
+                    <p class="service-name">Engine Over Houl</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto1.jpg" alt="Layanan 7">
+                    <p class="service-name">Over Houl Transmisi</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto2.jpg" alt="Layanan 8">
+                    <p class="service-name">Ganti Kopling Manual/Matic</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto3.jpg" alt="Layanan 9">
+                    <p class="service-name">Engine Scaner</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto4.jpg" alt="Layanan 10">
+                    <p class="service-name">Elektrikal</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto5.jpg" alt="Layanan 11">
+                    <p class="service-name">Service Rem</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto6.jpg" alt="Layanan 12">
+                    <p class="service-name">Service Kaki-Kaki</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto1.jpg" alt="Layanan 13">
+                    <p class="service-name">Power Window</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto2.jpg" alt="Layanan 14">
+                    <p class="service-name">Power Steering</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto3.jpg" alt="Layanan 15">
+                    <p class="service-name">Servis Trotle Body</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto4.jpg" alt="Layanan 16">
+                    <p class="service-name">Servis AC Mobil</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto5.jpg" alt="Layanan 17">
+                    <p class="service-name">Isi Freon</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto6.jpg" alt="Layanan 18">
+                    <p class="service-name">Pasang Unit Baru</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto1.jpg" alt="Layanan 19">
+                    <p class="service-name">Audio</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto2.jpg" alt="Layanan 20">
+                    <p class="service-name">Pasang Head Unit</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto3.jpg" alt="Layanan 21">
+                    <p class="service-name">Camera Mundur</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto4.jpg" alt="Layanan 22">
+                    <p class="service-name">Alarm Remote Control</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto5.jpg" alt="Layanan 23">
+                    <p class="service-name">Lampu-Lampu</p>
+                </div>
+                <div class="service-box">
+                    <img src="foto6.jpg" alt="Layanan 24">
+                    <p class="service-name">Cooling Sistem</p>
+                </div>
+                <!-- Tambahkan layanan lainnya hingga total 24 box -->
+            </div>
+            <button class="nav-arrow-service right-arrow" onclick="moveRight()">›</button>
+        </div>
+    </section>
+    
+    
+
+    <section id="video">
+        <h2><center>Video Profil</center></h2>
+        <video controls width="100%" poster="assets/img/video-thumbnail.jpg">
+            <source src="assets/videos/v2.mp4" type="video/mp4">
+            Browser Anda tidak mendukung pemutar video.
+        </video>
+    </section>
+
+
+    <section id="gallery" class="dark-background">
+        <h2><center>Galeri</center></h2>
+        <div class="gallery-container">
+            <div class="gallery-images">
+                <img src="assets/img/foto.png" alt="Gambar 1">
+                <img src="assets/img/foto.png" alt="Gambar 2">
+                <img src="assets/img/foto.png" alt="Gambar 3">
+                <img src="assets/img/foto.png" alt="Gambar 4">
+                <!-- Tambahkan lebih banyak gambar jika diperlukan -->
+            </div>
+        </div>
+    </section>
+
+    <div class="card-container">
+        <!-- Teks di sebelah kiri peta -->
+        <div class="map-info">
+            <h3>Lokasi Kami</h3>
+            <p>Datanglah ke BinaMotor untuk layanan unggulan dan konsultasi secara langsung.</p>
+            <p>Temukan kami dengan mudah melalui peta di sebelah!</p>
+        </div>
+    
+        <!-- Peta Google Maps di dalam card -->
+        <div class="map-card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.6861803950176!2d107.34877129367328!3d-6.3305731999174055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6977cc714715fb%3A0xcb5fc7e2eb1a449!2sBengkel%20Mobil%20Bina%20Motor!5e0!3m2!1sid!2sid!4v1729658295619!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    
+
+    <footer>
+        <section id="kontak">
+            <h2>Hubungi Kami</h2>
+            <p><strong>Alamat :</strong></p>
+            <p>Jl. Perum Citra Kebun Mas No.14 blok h10, Bengle, Kec. Majalaya, Karawang, Jawa Barat 41371</p>
+            <p><strong>Telepon/WA :</strong> +62 812 1873 0089</p>
+            <p><strong>Email:</strong> </p>
+        </section>
+        <p>&copy; 2024 Bina Motor. All rights reserved.</p>
+    </footer>
+
+    <script src="banner.js"></script>
+    <script src="service.js"></script>
+    
+</body>
+</html>

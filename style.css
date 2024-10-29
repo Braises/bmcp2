@@ -1,0 +1,489 @@
+/* Style umum */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    z-index: -1;
+}
+
+/* Style untuk h1 */
+h1 {
+    color: #df6000; /* Warna oranye yang elegan */
+    font-family: 'Playfair Display', serif; /* Sesuaikan dengan font yang diinginkan */
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Style untuk h2 */
+h2 {
+    color: #333; /* Tetap menggunakan warna sebelumnya */
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff4d00;
+}
+
+/* Header dengan Latar Transparan */
+header {
+    background: rgba(0, 0, 0, 0.4); /* Warna hitam dengan transparansi 40% */
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Style Navigasi Header */
+nav ul li a {
+    color: #fff; /* Warna teks awal */
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efek Hover untuk Navigasi */
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Warna kotak gelap dengan transparansi */
+    color: #f0f0f0; /* Teks menjadi lebih terang */
+}
+
+
+/* Banner */
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.slider-container {
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+/* Tombol Panah */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Section Style */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.dark-background {
+    background: #333;
+    color: #fff;
+}
+
+.dark-background h2 {
+    color: #fff;
+}
+
+/* Section Info dengan Background */
+#info {
+    background-color: #f4f4f9;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Kontainer Utama Info */
+.info-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+/* Gambar dalam Kotak */
+.info-image {
+    flex: 1;
+    background: #e0e0e0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ddd;
+}
+
+.info-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-image img:hover {
+    transform: scale(1.05); /* Efek Zoom Saat dihover */
+}
+
+/* Teks Konten Info */
+.info-content {
+    flex: 2;
+    padding: 30px;
+}
+
+.info-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.info-content p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+
+/* Section Layanan */
+.services-section {
+    padding: 40px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+/* Title Style */
+.section-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Container Style */
+.services-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Wrapper for Service Boxes */
+.service-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(250px * 24); /* Width to fit all boxes */
+}
+
+/* Each Service Box */
+.service-box {
+    min-width: 200px;
+    max-width: 200px;
+    height: 250px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.service-name {
+    font-size: 1em;
+    padding: 10px;
+    color: #333;
+}
+
+/* Anak Panah Navigasi */
+.nav-arrow-service {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 10;
+    border-radius: 50%;
+    opacity: 0.9;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease; /* Efek halus saat diklik */
+}
+
+.nav-arrow-service:hover {
+    transform: translateY(-50%) scale(1.1); /* Memperbesar sedikit saat dihover */
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+
+
+/* Gallery */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-images img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Map */
+/* Style untuk Card Map */
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-info {
+    flex: 1;
+    color: #333;
+}
+
+.map-info h3 {
+    font-size: 1.5rem;
+    color: #f76c6c;
+    margin-bottom: 10px;
+}
+
+.map-info p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.map-card {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.map-card iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Style khusus untuk teks "Hubungi Kami" di footer */
+footer h2 {
+    color: #f9a825; /* Warna kuning cerah atau oranye terang */
+}
+
+
+footer p {
+    margin: 5px 0;
+}
+
+footer section {
+    margin-bottom: 20px;
+}
+
+footer strong {
+    color: #f76c6c;
+}
+
+
+/* CSS untuk Tampilan Mobile */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .logo-container, nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+        gap: 10px;
+    }
+    
+    .info-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .services-container {
+        /* Tambahkan scroll horizontal */
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .service-wrapper {
+        display: flex;
+        width: max-content;
+    }
+    
+    .service-box {
+        min-width: 180px; /* Lebar box layanan lebih kecil untuk menyesuaikan layar kecil */
+        max-width: 180px;
+        height: auto;
+    }
+    
+    .gallery-images img {
+        max-width: 150px;
+    }
+
+    .map-card iframe {
+        width: 100%;
+        height: 300px; /* Tinggi peta di perangkat mobile */
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+    
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-name {
+        font-size: 0.9rem;
+    }
+}
